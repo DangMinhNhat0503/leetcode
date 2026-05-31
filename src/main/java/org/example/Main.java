@@ -1,17 +1,17 @@
 package org.example;
 
-import leetcode.LengthOfLastWord.LengthOfLastWordSolution;
-import leetcode.PlusOne.PlusOneSolution;
 
+import leetcode.SameTree.IsSameTreeSolution;
+import leetcode.SameTree.TreeNode;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        PlusOneSolution a = new PlusOneSolution();
+        IsSameTreeSolution isSameTreeSolution = new IsSameTreeSolution();
 
-        int[] b = new int[]{1,2,3};
+        TreeNode p = new TreeNode (0, new TreeNode(1),null);
+        TreeNode q = new TreeNode(1, new TreeNode(0), null);
 
-        a.plusOne(b);
+        System.out.println(isSameTreeSolution.isSameTree(p,q));
+
     }
 }
