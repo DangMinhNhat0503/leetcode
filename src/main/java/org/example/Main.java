@@ -1,17 +1,14 @@
 package org.example;
 
 
-import leetcode.SameTree.IsSameTreeSolution;
-import leetcode.SameTree.TreeNode;
+import leetcode.SingleNumber.SingleNumberSolution;
 
 public class Main {
     public static void main(String[] args) {
-        IsSameTreeSolution isSameTreeSolution = new IsSameTreeSolution();
+        SingleNumberSolution singleNumberSolution = new SingleNumberSolution();
 
-        TreeNode p = new TreeNode (0, new TreeNode(1),null);
-        TreeNode q = new TreeNode(1, new TreeNode(0), null);
+        int[] a = new int[]{4,1,2,1,2};
 
-        System.out.println(isSameTreeSolution.isSameTree(p,q));
-
+        System.out.println(singleNumberSolution.singleNumber(a));
     }
 }

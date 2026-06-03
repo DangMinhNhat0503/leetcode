@@ -5,6 +5,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IsSameTreeSolution {
+    //Lời giải chỉ 7 dòng:
+    //public boolean isSameTree(TreeNode p, TreeNode q) {
+    //        // 1. Nếu cả hai nút cùng là null -> Giống nhau tại vị trí này
+    //        if (p == null && q == null) return true;
+    //
+    //        // 2. Nếu một trong hai bị null (mà đứa kia có giá trị) -> Khác nhau
+    //        if (p == null || q == null) return false;
+    //
+    //        // 3. Nếu giá trị của hai nút khác nhau -> Khác nhau
+    //        if (p.val != q.val) return false;
+    //
+    //        // 4. Nếu nút hiện tại bằng nhau, đệ quy kiểm tra tiếp cây con bên TRÁI và cây con bên PHẢI
+    //        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+    //    }
+
+
     public boolean isSameTree(TreeNode p, TreeNode q) {
         List<Integer> array1 = binaryTreeConvertToList(p);
         List<Integer> array2 = binaryTreeConvertToList(q);
